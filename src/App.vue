@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <header class="header">
-      <div class="logo">
+      <div class="logo" @click="$router.push('/')" style="cursor: pointer">
         <h1>СБР</h1>
         <p>Сервис бронирования ресурсов</p>
       </div>

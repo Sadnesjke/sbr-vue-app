@@ -23,6 +23,7 @@
         </div>
       </div>
 
+      <!-- Календарь -->
       <div class="calendar-card">
         <h3 class="section-title">Декабрь 2023</h3>
         <div class="calendar">
@@ -35,6 +36,7 @@
         </div>
       </div>
 
+      <!-- Приглашения -->
       <div class="invitations-card">
         <h3 class="section-title">Автивные приглашения</h3>
         <div class="invitation-item" v-for="(inv, idx) in invitations" :key="idx">

@@ -41,11 +41,12 @@
       </div>
     </form>
 
-    <div class="modal" :class="{ show: modalVisible }" @click="modalVisible = false">
+    <!-- Модальное окно -->
+    <div class="modal" :class="{ show: modalVisible }" @click="closeModal">
       <div class="modal-content" @click.stop>
         <h3 class="modal-title">Ошибка</h3>
         <p class="modal-text">Неверный запрос. Обратитесь в техподдержку</p>
-        <button class="btn-primary" @click="modalVisible = false">Принять</button>
+        <button class="btn-primary" @click="closeModal">Принять</button>
       </div>
     </div>
   </div>
@@ -71,5 +72,9 @@ const modalVisible = ref(false)
 
 const handleSubmit = () => {
   modalVisible.value = true
+}
+
+const closeModal = () => {
+  modalVisible.value = false
 }
 </script>

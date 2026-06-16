@@ -1,4 +1,3 @@
-/* ===== ОБЩИЕ СТИЛИ ===== */
 * {
   margin: 0;
   padding: 0;
@@ -12,72 +11,14 @@ body {
   padding: 20px;
 }
 
-/* ===== КОНТЕЙНЕР ===== */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-  overflow: hidden;
-}
-
-/* ===== ШАПКА ===== */
-.header {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: white;
-  padding: 20px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.logo h1 {
-  font-size: 28px;
-  margin-bottom: 5px;
-}
-
-.logo p {
-  font-size: 12px;
-  opacity: 0.9;
-}
-
-.logo {
-  cursor: pointer;
-}
-
-.header-nav {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.btn-link {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 6px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-size: 13px;
-  white-space: nowrap;
-}
-
-.btn-link:hover {
-  background: white;
+.page-title {
+  font-size: 32px;
   color: #1e3c72;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #667eea;
 }
 
-/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
-.main-content {
-  padding: 40px;
-}
-
-/* ===== ОПИСАНИЕ ===== */
 .description {
   color: #555;
   line-height: 1.6;
@@ -87,16 +28,7 @@ body {
   border-radius: 12px;
 }
 
-/* ===== ЗАГОЛОВКИ ===== */
-.page-title {
-  font-size: 32px;
-  color: #1e3c72;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #667eea;
-}
-
-/* ===== ВКЛАДКИ ===== */
+/* Вкладки */
 .tabs {
   display: flex;
   gap: 5px;
@@ -139,11 +71,7 @@ body {
   display: block;
 }
 
-/* ===== ФОРМА ===== */
-.booking-form {
-  max-width: 100%;
-}
-
+/* Форма */
 .form-group {
   margin-bottom: 30px;
 }
@@ -187,7 +115,6 @@ body {
   border-color: #667eea;
 }
 
-/* ===== СЕТКА ВРЕМЕНИ ===== */
 .time-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -216,7 +143,6 @@ body {
   border-color: #667eea;
 }
 
-/* ===== ЧЕКБОКСЫ ===== */
 .checkbox-group {
   display: flex;
   gap: 20px;
@@ -236,7 +162,6 @@ body {
   cursor: pointer;
 }
 
-/* ===== КНОПКИ ===== */
 .form-actions {
   display: flex;
   gap: 15px;
@@ -305,7 +230,7 @@ body {
   color: white;
 }
 
-/* ===== КАРТОЧКИ ПРОСТРАНСТВ ===== */
+/* Пространство */
 .space-card {
   background: #f8f9fa;
   border-radius: 15px;
@@ -332,14 +257,11 @@ body {
   padding: 8px 15px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 13px;
-  transition: all 0.3s;
 }
 
 .time-slots-list .time-slot:hover {
   background: #667eea;
   color: white;
-  border-color: #667eea;
 }
 
 .space-actions {
@@ -348,7 +270,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===== КАЛЕНДАРЬ ===== */
+/* Календарь */
 .calendar-card {
   background: #f8f9fa;
   border-radius: 15px;
@@ -375,7 +297,6 @@ body {
   padding: 8px;
   background: #e8ecf1;
   border-radius: 8px;
-  font-size: 14px;
 }
 
 .calendar-days {
@@ -390,17 +311,9 @@ body {
   background: white;
   border-radius: 8px;
   border: 1px solid #e0e0e0;
-  font-size: 14px;
-  transition: all 0.3s;
 }
 
-.calendar-days span:hover {
-  background: #667eea;
-  color: white;
-  border-color: #667eea;
-}
-
-/* ===== ПРИГЛАШЕНИЯ ===== */
+/* Приглашения */
 .invitations-card {
   background: #f8f9fa;
   border-radius: 15px;
@@ -421,20 +334,17 @@ body {
 .invitation-item h4 {
   color: #1e3c72;
   margin-bottom: 8px;
-  font-size: 16px;
 }
 
 .inv-time {
   color: #667eea;
   font-weight: 500;
   margin-bottom: 5px;
-  font-size: 14px;
 }
 
 .inv-person {
   font-weight: 600;
   margin-bottom: 3px;
-  font-size: 14px;
 }
 
 .inv-role {
@@ -449,7 +359,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===== ЛЮДИ ===== */
+/* Люди */
 .people-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -466,7 +376,6 @@ body {
 .person-name {
   color: #1e3c72;
   margin-bottom: 8px;
-  font-size: 18px;
 }
 
 .person-description {
@@ -482,7 +391,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===== МОДАЛЬНОЕ ОКНО ===== */
+/* Модальное окно */
 .modal {
   display: none;
   position: fixed;
@@ -521,70 +430,30 @@ body {
   line-height: 1.5;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
+/* Адаптивность */
 @media (max-width: 600px) {
-  .container {
-    border-radius: 10px;
-  }
-  
-  .header {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-  
-  .header-nav {
-    justify-content: center;
-  }
-  
-  .main-content {
-    padding: 20px;
-  }
-  
   .page-title {
     font-size: 24px;
   }
-  
   .time-grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
-  
   .form-actions {
     flex-direction: column;
   }
-  
   .btn-primary,
   .btn-secondary {
     width: 100%;
   }
-  
   .people-list {
     grid-template-columns: 1fr;
   }
-  
   .tabs {
     overflow-x: auto;
   }
-  
   .tab {
     padding: 10px 16px;
     font-size: 14px;
     white-space: nowrap;
-  }
-  
-  .space-actions {
-    flex-direction: column;
-  }
-  
-  .space-actions .btn-primary,
-  .space-actions .btn-outline {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .calendar-weekdays span,
-  .calendar-days span {
-    font-size: 12px;
-    padding: 6px;
   }
 }

@@ -11,8 +11,8 @@
       <button class="tab disabled" disabled>Профиль</button>
     </div>
 
+    <!-- Пространство -->
     <div id="space" class="tab-content active">
-      <!-- Коворкинг ИРНИТУ -->
       <div class="space-card">
         <h2 class="space-title">Коворкинг ИРНИТУ</h2>
         <div class="time-slots-list">
@@ -35,6 +35,7 @@
         </div>
       </div>
 
+      <!-- Календарь -->
       <div class="calendar-card">
         <h3 class="section-title">Декабрь 2023</h3>
         <div class="calendar">
@@ -47,6 +48,7 @@
         </div>
       </div>
 
+      <!-- Приглашения -->
       <div class="invitations-card">
         <h3 class="section-title">Автивные приглашения</h3>
         <div class="invitation-item" v-for="(inv, idx) in invitations" :key="idx">
